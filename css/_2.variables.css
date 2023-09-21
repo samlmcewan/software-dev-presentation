@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+
+:root {
+    --navy: #17477f;
+    --navy75: #40669e;
+    --navy50: #7d91bd;
+    --navy25: #bcc4dd;
+
+
+    --sky: #1995d3;
+    --sky75: #13ace3;
+    --sky50: #88caed;
+    --sky25: #c9e5f6;
+
+    --purple: #6d2c84;
+    --purple75: #8e569e;
+    --purple50: #ad8dbd;
+    --purple25: #d7c6e0;
+
+    --teal: #027189;
+    --teal75: #008fa5;
+    --teal50: #75b1c2;
+    --teal25: #bcd9e3;
+
+    --cyan: #00afaa;
+    --cyan75: #85cac4;
+    --cyan50: #b6ddda;
+    --cyan25: #dcedec;
+
+    --orange: #f39421;
+    --orange75: #f6af50;
+    --orange50: #fccc8e;
+    --orange25: #fbe4c7;
+
+
+}

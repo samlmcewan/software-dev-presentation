@@ -1,0 +1,153 @@
+/* Default styles - small devices (Mobile, screen width < 768px) */
+/* Reset  */
+.reveal .slides {
+    text-align: unset;
+}
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-weight: 600;
+}
+h1, h2, h3 {
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--sky25);
+    font-weight: 300;
+
+}
+
+.top-bar h1, .top-bar p {
+    color: var(--bs-gray);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h2.slide-title-lg {
+    font-size: 4.75rem;
+}
+
+h2.slide-title {
+    font-size: 4rem;
+}
+
+.sky25 {
+    color: var(--sky25);
+}
+
+.purple50 {
+    color: var(--purple50);
+}
+
+.cyan75 {
+    color: var(--cyan75);
+}
+
+.sky50 {
+    color: var(--sky50);
+}
+
+.navy .slide-title {
+    color: var(--teal50);
+    color: var(--cyan75);
+}
+.navy i {
+    color: var(--sky);
+}
+
+.navy p, .navy li {
+    color: var(--sky25);
+}
+
+.fa-sl {
+    font-size: 13rem;
+}
+
+.fa-ssl {
+    font-size: 16rem;
+}
+
+.fa-xxxl {
+    font-size: 6.5rem;
+}
+
+.ps-q {
+    padding-left: 37px;
+}
+
+
+
+.container-content p, .container-content li {
+    font-size: 1.5rem;
+    line-height: calc(1.5rem*1.4);
+    /* font-weight: 300; */
+}
+
+.container-content li {
+    padding-bottom: 1rem;
+}
+/* Blockquotes */
+.blockquote p {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: calc(3.1rem*1.35);
+}
+.blockquote-footer {
+    /* color: var(--bs-gray-500); */
+    color: var(--sky25);
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.blockquote .fa-quote-left {
+    position: absolute; 
+    color: var(--sky25);
+     /* margin-left: -35px; */
+     /* margin-top: -20px; */
+     font-size: 2rem;
+}
+
+.blockquote .fa-quote-right {
+    font-size: 2rem;
+    position: absolute;
+    color: var(--sky25)
+}
+.blockquote-footer::before {
+    display: none;
+}
+
+/*--------------------------------------------------------------
+# Colours
+--------------------------------------------------------------*/
+
+.navy .top-bar h1, .navy .top-bar p {
+    color: var(--bs-gray-500);
+}
+
+/*--------------------------------------------------------------
+# top bar
+--------------------------------------------------------------*/
+.top-bar {
+    position: absolute;
+}
+
+/*--------------------------------------------------------------
+# Technology
+--------------------------------------------------------------*/
+
+.techs .tech i {
+    font-size: 9rem;
+}
+
+/* Images  */
+.pres-image {
+    /* border: 5px solid var(--navy); */
+    border-radius: 10px;
+    overflow: hidden;
+}
