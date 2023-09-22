@@ -345,41 +345,46 @@
                                 <div class="r-stack">
                                     <i class="fragment fa-brands fa-apple fa-sl fade-in-then-out" data-fragment-index="1"></i>
                                     <div class="fragment pres-image fade-in-then-out" data-fragment-index="2">
-                                            <code>
+                                        <div class="code-block">
+                                            
+                                         
+<div class="code-block purple50">
                                                
 
-                                                // Get the HTML elements
-                                                const addToHomeScreenIOS = document.querySelector('.a2hs');
-                                                addToHomeScreenIOS.style.display = "none";
-                                                const downArr = document.querySelector('#triangle-down');
-                                                downArr.style.display="none";
-                                                
-                                                // Detect if device is on iOS 
-                                                const isIos = () => {
-                                                  const userAgent = window.navigator.userAgent.toLowerCase();
-                                                  return /iphone|ipad|ipod/.test( userAgent );
-                                                };
-                                                
-                                                // Detect if device is in standalone mode
-                                                const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
-                                                
-                                                // Detect if user is on mobile or tablet device
-                                                function detectMob() {
-                                                    const toMatch = [
-                                                        /Android/i,
-                                                        /webOS/i,
-                                                        /iPhone/i,
-                                                        /iPad/i,
-                                                        /iPod/i,
-                                                        /BlackBerry/i,
-                                                        /Windows Phone/i
-                                                    ];
-                                                    
-                                                    return toMatch.some((toMatchItem) => {
-                                                        return navigator.userAgent.match(toMatchItem);
-                                                    });
-                                                }
-                                                
+                                                <span class="comment py-3">// Display pop up if device is IOS, not in standAloneMode, is a mobile device, browser is Safari
+                                                </span><br><br>
+                                                <span class="comment">// Get the HTML elements</span><br>
+                                                <span class="purple50">const</span> <span class="white">addToHomeScreenIOS</span> = document.querySelector('.a2hs');<br>
+                                                addToHomeScreenIOS.style.display = "none";<br>
+                                                const downArr = document.querySelector('#triangle-down');<br>
+                                                downArr.style.display="none";<br>
+                                                <br>
+                                                <span class="comment">// Detect if device is on iOS</span> <br>
+                                                <span class="purple50">const</span> <span class="white">isIos</span> = () => {<br>
+                                                    <span class="pl-20"><span class="purple50">const</span> <span class="white">userAgent</span> = window.navigator.userAgent.toLowerCase();</span><br>
+                                                    <span class="pl-20"> return /<span class="white">iphone</span>|<span class="white">ipad</span>|<span class="white">ipod/</span>.test( userAgent );</span><br>
+                                                };<br>
+                                                <br>
+                                                <span class="comment">// Detect if device is in standalone mode</span><br>
+                                                <span class="purple50">const</span> isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);<br>
+                                                <br>
+                                                <span class="comment">// Detect if user is on mobile or tablet device</span><br>
+                                                <span class="purple50">function</span> <span class="white">detectMob</span>() {<br>
+                                                    <span class="pl-20"><span class="purple50">const</span> <span class="white">toMatch</span> = [</span><br>
+                                                    <span class="pl-20"></span>/Android/i,</span><br>
+                                                    <span class="pl-20"></span>/webOS/i,</span><br>
+                                                    <span class="pl-20"></span>/iPhone/i,</span><br>
+                                                    <span class="pl-20"></span>/iPad/i,</span><br>
+                                                    <span class="pl-20"></span>/iPod/i,</span><br>
+                                                    <span class="pl-20"></span>/BlackBerry/i,</span><br>
+                                                    <span class="pl-20"></span>/Windows Phone/i</span><br>
+                                                    <span class="pl-20"></span>];</span><br>
+                                                    <br>
+                                                    <span class="pl-20"><span class="purple50">return</span> toMatch.some((toMatchItem) => {</span><br>
+                                                        <span class="pl-20"></span><span class="pl-20"><span class="purple50">return</span> navigator.userAgent.match(toMatchItem);</span><br>
+                                                        <span class="pl-20">});</span><br>
+                                                }<br>
+                                               
                                                 <!-- // Detect if safari 
                                                 const isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
                                                                navigator.userAgent &&
@@ -407,7 +412,14 @@
                                                 
                                                 const closeIcon = document.querySelector('.a2hs .close');
                                                 closeIcon.addEventListener('click', closeAlert);              -->
-                                             </code>
+                                            </div>
+                                            
+                                            
+
+                                            
+
+                                        </div>
+                                            
                                     </div>
                                     <div class="fragment pres-image fade-in-then-out" data-fragment-index="3">
                                         <img width="188.71" height="408.53" class="pres-image" src="/img/safari-1.jpg">

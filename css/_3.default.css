@@ -154,6 +154,38 @@ h2.slide-title {
 /*--------------------------------------------------------------
 # Code
 --------------------------------------------------------------*/
+/* pre {
+    background-color: var(--sky);
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    display: block;
+    border: 1px solid transparent;
+    margin: 1rem 0 2rem;
+    padding: 1rem 2.5rem 1rem 1rem;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap
+}
 code {
-    white-space: pre;
+    
+    width: fit-content;
+
+} */
+.code-block {
+    line-height: calc(1.125rem*1.1);
+    color: var(--sky50);
+}
+.pl-20 {
+    padding-left: 20px;
+}
+.pl-40 {
+    padding-left: 40px;
+}
+.comment {
+    color: var(--cyan75);
+}
+.white {
+    color:#ffffff;
 }
