@@ -323,6 +323,111 @@
                 </section>
                 <!-- End Options - PWA -->
 
+                <!-- ADD DECISION HERE  -->
+
+                <!-- Risks -->
+                <section class="navy h-100" data-background-color="var(--navy)">
+                    <div class="container container-content  h-100 py-5">
+                        <div class="row w-100 h-100">
+                            <div class="col-lg-5 me-auto">
+                                <h2 class="slide-title pt-3 pb-4">
+                                    Risks
+                                </h2>
+                                <p class="pb-4 fragment" data-fragment-index="0">Risks associated with the decision</p>
+                                <ul>
+                                    <li class="fragment" data-fragment-index="1">Harder for Apple users to get app-like experience</li>
+                                    <li class="fragment" data-fragment-index="4">Not geo locking to UK</li>
+                                </ul>
+                                
+                                
+                            </div>
+                            <div class="col-lg-7 d-flex align-items-center justify-content-center">
+                                <div class="r-stack">
+                                    <i class="fragment fa-brands fa-apple fa-sl fade-in-then-out" data-fragment-index="1"></i>
+                                    <div class="fragment pres-image fade-in-then-out" data-fragment-index="2">
+                                            <code>
+                                               
+
+                                                // Get the HTML elements
+                                                const addToHomeScreenIOS = document.querySelector('.a2hs');
+                                                addToHomeScreenIOS.style.display = "none";
+                                                const downArr = document.querySelector('#triangle-down');
+                                                downArr.style.display="none";
+                                                
+                                                // Detect if device is on iOS 
+                                                const isIos = () => {
+                                                  const userAgent = window.navigator.userAgent.toLowerCase();
+                                                  return /iphone|ipad|ipod/.test( userAgent );
+                                                };
+                                                
+                                                // Detect if device is in standalone mode
+                                                const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+                                                
+                                                // Detect if user is on mobile or tablet device
+                                                function detectMob() {
+                                                    const toMatch = [
+                                                        /Android/i,
+                                                        /webOS/i,
+                                                        /iPhone/i,
+                                                        /iPad/i,
+                                                        /iPod/i,
+                                                        /BlackBerry/i,
+                                                        /Windows Phone/i
+                                                    ];
+                                                    
+                                                    return toMatch.some((toMatchItem) => {
+                                                        return navigator.userAgent.match(toMatchItem);
+                                                    });
+                                                }
+                                                
+                                                <!-- // Detect if safari 
+                                                const isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+                                                               navigator.userAgent &&
+                                                               navigator.userAgent.indexOf('CriOS') == -1 &&
+                                                               navigator.userAgent.indexOf('FxiOS') == -1;
+                                                
+                                                // Check if should display install popup notification:
+                                                if (isIos() && !isInStandaloneMode() && detectMob()===true && isSafari===true) {
+                                                    const addToHomeScreenIOS = document.querySelector('.a2hs');
+                                                    addToHomeScreenIOS.style.display = "flex";
+                                                    const downArr = document.querySelector('#triangle-down');
+                                                    downArr.style.display="block";
+                                                } else {
+                                                     const addToHomeScreenIOS = document.querySelector('.a2hs');
+                                                     addToHomeScreenIOS.style.display = "none";
+                                                     const downArr = document.querySelector('#triangle-down');
+                                                     downArr.style.display="none";
+                                                }
+                                                
+                                                // Close alert box when close icon clicked    
+                                                const closeAlert = () => {
+                                                    addToHomeScreenIOS.style.display = "none";
+                                                    downArr.style.display="none";
+                                                }
+                                                
+                                                const closeIcon = document.querySelector('.a2hs .close');
+                                                closeIcon.addEventListener('click', closeAlert);              -->
+                                             </code>
+                                    </div>
+                                    <div class="fragment pres-image fade-in-then-out" data-fragment-index="3">
+                                        <img width="188.71" height="408.53" class="pres-image" src="/img/safari-1.jpg">
+                                    </div>
+
+                                    <i class="fragment fa-duotone fa-location-pin-lock fa-sl fade-in-then-out" data-fragment-index="4"></i>
+                                    
+                                        
+                                    <div class="pres-image fragment fade-in-then-out" data-fragment-index="6">
+                                        <img src="/img/CCA_9.png" width="365.5" height="616.47">
+                                    </div>
+                                    
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Risks  -->
+
                 <!-- Background -->
                 <!-- <section class="navy h-100" data-background-color="var(--navy)">
                     <div class="container container-content  h-100 py-5">
