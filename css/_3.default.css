@@ -176,6 +176,8 @@ code {
 .code-block {
     line-height: calc(1.125rem*1.1);
     color: var(--sky50);
+    background-color: rgba(25, 149, 211, .1);
+    
 }
 .pl-20 {
     padding-left: 20px;
