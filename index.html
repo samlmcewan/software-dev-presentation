@@ -345,45 +345,83 @@
                                 <div class="r-stack">
                                     <i class="fragment fa-brands fa-apple fa-sl fade-in-then-out" data-fragment-index="1"></i>
                                     <div class="fragment pres-image fade-in-then-out" data-fragment-index="2">
-                                        <div class="code-block p-4 me-5">
-                                            
-                                         
-<div class=" p-3">
-                                               
+                                        
+                                        <div class="code-block">
+                                            <div class="code-header"><p>addToHomeScreen.js</p></div>
+                                            <div class="code-pad">
 
-                                                <span class="comment py-3">// Display pop up if device is IOS/Safari
-                                                </span><br><br>
+                                           
+
                                                 <span class="comment">// Get the HTML elements</span><br>
-                                                <span class="purple50">const</span> <span class="white">addToHomeScreenIOS</span> = document.querySelector('.a2hs');<br>
+                                                const addToHomeScreenIOS = document.querySelector('.a2hs');<br>
                                                 addToHomeScreenIOS.style.display = "none";<br>
                                                 const downArr = document.querySelector('#triangle-down');<br>
                                                 downArr.style.display="none";<br>
                                                 <br>
-                                                <span class="comment">// Detect if device is on iOS</span> <br>
-                                                <span class="purple50">const</span> <span class="white">isIos</span> = () => {<br>
-                                                    <span class="pl-20"><span class="purple50">const</span> <span class="white">userAgent</span> = window.navigator.userAgent.toLowerCase();</span><br>
-                                                    <span class="pl-20"> return /<span class="white">iphone</span>|<span class="white">ipad</span>|<span class="white">ipod/</span>.test( userAgent );</span><br>
+                                                <span class="comment">// Detect if device is on iOS</span><br>
+                                                const isIos = () => {<br>
+                                                const userAgent = window.navigator.userAgent.toLowerCase();<br>
+                                                return /iphone|ipad|ipod/.test( userAgent );<br>
                                                 };<br>
                                                 <br>
                                                 <span class="comment">// Detect if device is in standalone mode</span><br>
-                                                <span class="purple50">const</span> isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);<br>
+                                                const isInStandaloneMode = () => <br>
+                                                ('standalone' in window.navigator) <br>
+                                                && (window.navigator.standalone);<br>
                                                 <br>
                                                 <span class="comment">// Detect if user is on mobile or tablet device</span><br>
-                                                <span class="purple50">function</span> <span class="white">detectMob</span>() {<br>
-                                                    <span class="pl-20"><span class="purple50">const</span> <span class="white">toMatch</span> = [</span><br>
-                                                    <span class="pl-20"></span>/Android/i,</span><br>
-                                                    <span class="pl-20"></span>/webOS/i,</span><br>
-                                                    <span class="pl-20"></span>/iPhone/i,</span><br>
-                                                    <span class="pl-20"></span>/iPad/i,</span><br>
-                                                    <span class="pl-20"></span>/iPod/i,</span><br>
-                                                    <span class="pl-20"></span>/BlackBerry/i,</span><br>
-                                                    <span class="pl-20"></span>/Windows Phone/i</span><br>
-                                                    <span class="pl-20"></span>];</span><br>
+                                                const detectMob = () => {<br>
+                                                    <span class="pl-20"></span>const toMatch = [<br>
+                                                    <span class="pl-40"></span>/Android/i,<br>
+                                                    <span class="pl-40"></span>/webOS/i,<br>
+                                                    <span class="pl-40"></span>/iPhone/i,<br>
+                                                    <span class="pl-40"></span> /iPad/i,<br>
+                                                    <span class="pl-40"></span>/iPod/i,<br>
+                                                    <span class="pl-40"></span>/BlackBerry/i,<br>
+                                                    <span class="pl-40"></span>/Windows Phone/i<br>
+                                                        <span class="pl-20"></span>];<br>
                                                     <br>
-                                                    <span class="pl-20"><span class="purple50">return</span> toMatch.some((toMatchItem) => {</span><br>
-                                                        <span class="pl-20"></span><span class="pl-20"><span class="purple50">return</span> navigator.userAgent.match(toMatchItem);</span><br>
-                                                        <span class="pl-20">});</span><br>
-                                                }<br>
+                                                    <span class="pl-20"></span>return toMatch.some((toMatchItem) => navigator.userAgent.match(toMatchItem));<br>
+                                                };<br>
+
+
+
+
+
+
+                                               <!-- <span class="comment py-3">// Display pop up if device is IOS/Safari
+                                                </span><br><br>
+                                                <span class="comment">// Get the HTML elements</span> <br>
+                                                <span class="purple50">const</span> addToHomeScreenIOS <span class="sky75">=</span> document.<span class="orange75">querySelector(</span><span class="white50">'.a2hs'</span><span class="orange75">)</span>;<br>
+                                                addToHomeScreenIOS.style.display = <span class="white50">"none"</span>;<br>
+                                                <span class="purple50">const</span> downArr <span class="sky75">=</span> document.<span class="orange75">querySelector(</span><span class="white50">'#triangle-down'</span><span class="orange75">)</span>;<br>
+                                                downArr.style.display <span class="sky75">=</span> <span class="white50">"none"</span>;<br>
+                                                <br>
+                                                <span class="comment">// Detect if device is on iOS</span> <br>
+                                                <span class="purple50">const</span> <span class="orange75">isIos</span> = <span class="orange75">()</span> <span class="purple50">=></span> <span class="orange75">{</span><br>
+                                                    <span class="pl-20"><span class="purple50">const</span> <span class="sky75">userAgent</span> = window.navigator.<span class="purple50">userAgent</span>.toLowerCase<span class="purple50">()</span>;<br>
+                                                    <span class="pl-20"> return <span class="white50">/iphone</span>|<span class="white50">ipad</span>|<span class="white50">ipod/</span>.test<span class="purple50">(</span> userAgent <span class="purple50">)</span>;<br>
+                                                <span class="orange75">}</span>;<br>
+                                                <br>
+                                                <span class="comment">// Detect if device is in standalone mode</span><br>
+                                                <span class="purple50">const</span> isInStandaloneMode = () <span class="purple50">=></span> (<span class="white50">'standalone'</span> <span class="purple50">in</span> window.navigator) && (window.navigator.standalone);<br>
+                                                <br>
+                                                <span class="comment">// Detect if user is on mobile or tablet device</span><br>
+                                                const detectMob = () => {<br>
+                                                    <span class="pl-20"></span>const toMatch = [<br>
+                                                    <span class="pl-40"></span><span class="white50">/Android/</span>i,<br>
+                                                    <span class="pl-40"></span><span class="white50">/webOS/</span>i,<br>
+                                                    <span class="pl-40"></span><span class="white50">/iPhone/</span>i,<br>
+                                                    <span class="pl-40"></span><span class="white50">/iPad/</span>i,<br>
+                                                    <span class="pl-40"></span><span class="white50">/iPod/</span>i,<br>
+                                                    <span class="pl-40"></span><span class="white50">/BlackBerry/</span>i,<br>
+                                                    <span class="pl-40"></span><span class="white50">/Windows Phone/</span>i<br>
+                                                    <span class="pl-20"></span>];<br>
+                                                   
+                                                    <span class="pl-20"></span>return toMatch.some((toMatchItem) => navigator.userAgent.match(toMatchItem));<br>
+                                                };<br>
+                                                <br>
+                                                }<br> -->
                                                
                                                 <!-- // Detect if safari 
                                                 const isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
@@ -412,11 +450,16 @@
                                                 
                                                 const closeIcon = document.querySelector('.a2hs .close');
                                                 closeIcon.addEventListener('click', closeAlert);              -->
-                                            </div>
+                                           
                                             
                                             
 
                                             
+
+                                            </div>
+                                           
+                                            
+                                         
 
                                         </div>
                                             

@@ -10,8 +10,12 @@
 
 
     --sky: #1995d3;
+    
+    /* code  */
     --sky75: #13ace3;
+    /* code  */
     --sky50: #88caed;
+
     --sky25: #c9e5f6;
 
     --purple: #6d2c84;
@@ -30,9 +34,16 @@
     --cyan25: #dcedec;
 
     --orange: #f39421;
+    /* code  */
     --orange75: #f6af50;
+
     --orange50: #fccc8e;
     --orange25: #fbe4c7;
+
+    --white: #ffffff;
+    --white75: #ffffffbf;
+    --white50: #ffffff80;
+    --white25: #ffffff40;
 
 
 }

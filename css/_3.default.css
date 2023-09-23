@@ -37,21 +37,97 @@ h2.slide-title {
     font-size: 4rem;
 }
 
-.sky25 {
-    color: var(--sky25);
+.teal {
+    color: var(--teal);
+}
+.teal25 {
+    color: var(--teal25);
+}
+.teal50 {
+    color: var(--teal50);
+}
+.teal75 {
+    color: var(--teal75);
 }
 
+.orange {
+    color: var(--orange);
+}
+.orange25 {
+    color: var(--orange25);
+}
+.orange50 {
+    color: var(--orange50);
+}
+.orange75 {
+    color: var(--orange75);
+}
+
+.purple {
+    color: var(--purple);
+}
+.purple25 {
+    color: var(--purple25);
+}
 .purple50 {
     color: var(--purple50);
 }
+.purple75 {
+    color: var(--purple75);
+}
 
+.cyan {
+    color: var(--cyan);
+}
+.cyan25 {
+    color: var(--cyan25);
+}
+.cyan50 {
+    color: var(--cyan50);
+}
 .cyan75 {
     color: var(--cyan75);
 }
 
+.sky {
+    color: var(--sky);
+}
+.sky25 {
+    color: var(--sky25);
+}
 .sky50 {
     color: var(--sky50);
 }
+.sky75 {
+    color: var(--sky75);
+}
+
+.navy {
+    color: var(--navy);
+}
+.navy25 {
+    color: var(--navy25);
+}
+.navy50 {
+    color: var(--navy50);
+}
+.navy75 {
+    color: var(--navy75);
+}
+
+.white {
+    color: var(--white);
+}
+.white25 {
+    color: var(--white25);
+}
+.white50 {
+    color: var(--white50);
+}
+.white75 {
+    color: var(--white75);
+}
+
 
 .navy .slide-title {
     color: var(--teal50);
@@ -173,12 +249,29 @@ code {
     width: fit-content;
 
 } */
+.code-header {
+    margin: 0;
+    padding: 0 2.5rem 0 1rem;
+    /* margin-bottom: 1rem; */
+   
+    border-bottom: 1px solid var(--navy75);
+}
+.code-header p {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
 .code-block {
     font-size: 0.875rem;
+    font-family: monospace;
     line-height: calc(1.125rem*1.1);
-    color: var(--sky50);
-    background-color: rgba(25, 149, 211, .1);
+    /* color: var(--sky50); */
+    color: var(--sky75);
+    background-color: rgba(25, 149, 211, .075);
+    /* padding: 1rem 2.5rem 1rem 1rem; */
     
+}
+.code-pad {
+    padding: 1rem 2.5rem 1rem 1rem;
 }
 .pl-20 {
     padding-left: 20px;
@@ -188,6 +281,7 @@ code {
 }
 .comment {
     color: var(--cyan75);
+     /* color: var(--sky75); */
 }
 .white {
     color:#ffffff;
