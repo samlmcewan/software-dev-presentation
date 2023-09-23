@@ -279,6 +279,16 @@ code {
 .pl-40 {
     padding-left: 40px;
 }
+.pl-60 {
+    padding-left: 60px;
+}
+.pl-80 {
+    padding-left: 80px;
+}
+.pl-100 {
+    padding-left: 100px;
+}
+
 .comment {
     color: var(--cyan75);
      /* color: var(--sky75); */

@@ -336,7 +336,7 @@
                                 <p class="pb-4 fragment" data-fragment-index="0">Risks associated with the decision</p>
                                 <ul>
                                     <li class="fragment" data-fragment-index="1">Harder for Apple users to get app-like experience</li>
-                                    <li class="fragment" data-fragment-index="4">Not geo locking to UK</li>
+                                    <li class="fragment" data-fragment-index="5">Not geo locking to UK</li>
                                 </ul>
                                 
                                 
@@ -345,6 +345,9 @@
                                 <div class="r-stack">
                                     <i class="fragment fa-brands fa-apple fa-sl fade-in-then-out" data-fragment-index="1"></i>
                                     <div class="fragment pres-image fade-in-then-out" data-fragment-index="2">
+                                        <img width="188.71" height="408.53" class="pres-image" src="/img/safari-1.jpg">
+                                    </div>
+                                    <div class="fragment pres-image fade-in-then-out" data-fragment-index="3">
                                         
                                         <div class="code-block">
                                             <div class="code-header"><p>addToHomeScreen.js</p></div>
@@ -384,77 +387,50 @@
                                                     <span class="pl-20"></span>return toMatch.some((toMatchItem) => navigator.userAgent.match(toMatchItem));<br>
                                                 };<br>
 
-
-
-
-
-
-                                               <!-- <span class="comment py-3">// Display pop up if device is IOS/Safari
-                                                </span><br><br>
-                                                <span class="comment">// Get the HTML elements</span> <br>
-                                                <span class="purple50">const</span> addToHomeScreenIOS <span class="sky75">=</span> document.<span class="orange75">querySelector(</span><span class="white50">'.a2hs'</span><span class="orange75">)</span>;<br>
-                                                addToHomeScreenIOS.style.display = <span class="white50">"none"</span>;<br>
-                                                <span class="purple50">const</span> downArr <span class="sky75">=</span> document.<span class="orange75">querySelector(</span><span class="white50">'#triangle-down'</span><span class="orange75">)</span>;<br>
-                                                downArr.style.display <span class="sky75">=</span> <span class="white50">"none"</span>;<br>
-                                                <br>
-                                                <span class="comment">// Detect if device is on iOS</span> <br>
-                                                <span class="purple50">const</span> <span class="orange75">isIos</span> = <span class="orange75">()</span> <span class="purple50">=></span> <span class="orange75">{</span><br>
-                                                    <span class="pl-20"><span class="purple50">const</span> <span class="sky75">userAgent</span> = window.navigator.<span class="purple50">userAgent</span>.toLowerCase<span class="purple50">()</span>;<br>
-                                                    <span class="pl-20"> return <span class="white50">/iphone</span>|<span class="white50">ipad</span>|<span class="white50">ipod/</span>.test<span class="purple50">(</span> userAgent <span class="purple50">)</span>;<br>
-                                                <span class="orange75">}</span>;<br>
-                                                <br>
-                                                <span class="comment">// Detect if device is in standalone mode</span><br>
-                                                <span class="purple50">const</span> isInStandaloneMode = () <span class="purple50">=></span> (<span class="white50">'standalone'</span> <span class="purple50">in</span> window.navigator) && (window.navigator.standalone);<br>
-                                                <br>
-                                                <span class="comment">// Detect if user is on mobile or tablet device</span><br>
-                                                const detectMob = () => {<br>
-                                                    <span class="pl-20"></span>const toMatch = [<br>
-                                                    <span class="pl-40"></span><span class="white50">/Android/</span>i,<br>
-                                                    <span class="pl-40"></span><span class="white50">/webOS/</span>i,<br>
-                                                    <span class="pl-40"></span><span class="white50">/iPhone/</span>i,<br>
-                                                    <span class="pl-40"></span><span class="white50">/iPad/</span>i,<br>
-                                                    <span class="pl-40"></span><span class="white50">/iPod/</span>i,<br>
-                                                    <span class="pl-40"></span><span class="white50">/BlackBerry/</span>i,<br>
-                                                    <span class="pl-40"></span><span class="white50">/Windows Phone/</span>i<br>
-                                                    <span class="pl-20"></span>];<br>
-                                                   
-                                                    <span class="pl-20"></span>return toMatch.some((toMatchItem) => navigator.userAgent.match(toMatchItem));<br>
-                                                };<br>
-                                                <br>
-                                                }<br> -->
-                                               
-                                                <!-- // Detect if safari 
-                                                const isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
-                                                               navigator.userAgent &&
-                                                               navigator.userAgent.indexOf('CriOS') == -1 &&
-                                                               navigator.userAgent.indexOf('FxiOS') == -1;
-                                                
-                                                // Check if should display install popup notification:
-                                                if (isIos() && !isInStandaloneMode() && detectMob()===true && isSafari===true) {
-                                                    const addToHomeScreenIOS = document.querySelector('.a2hs');
-                                                    addToHomeScreenIOS.style.display = "flex";
-                                                    const downArr = document.querySelector('#triangle-down');
-                                                    downArr.style.display="block";
-                                                } else {
-                                                     const addToHomeScreenIOS = document.querySelector('.a2hs');
-                                                     addToHomeScreenIOS.style.display = "none";
-                                                     const downArr = document.querySelector('#triangle-down');
-                                                     downArr.style.display="none";
-                                                }
-                                                
-                                                // Close alert box when close icon clicked    
-                                                const closeAlert = () => {
-                                                    addToHomeScreenIOS.style.display = "none";
-                                                    downArr.style.display="none";
-                                                }
-                                                
-                                                const closeIcon = document.querySelector('.a2hs .close');
-                                                closeIcon.addEventListener('click', closeAlert);              -->
+                                            </div>
                                            
                                             
-                                            
+                                         
 
+                                        </div>
                                             
+                                    </div>
+
+                                    <div class="fragment pres-image fade-in-then-out" data-fragment-index="4">
+                                        
+                                        <div class="code-block">
+                                            <div class="code-header"><p>addToHomeScreen.js</p></div>
+                                            <div class="code-pad">
+
+                                                <span class="comment">// Detect if safari</span><br>
+                                                const isSafari = <br>
+                                                <span class="pl-20"></span>navigator.vendor && <br>
+                                                <span class="pl-20"></span>navigator.vendor.indexOf('Apple') > -1 &&<br>
+                                                <span class="pl-20"></span>navigator.userAgent &&<br>
+                                                <span class="pl-20"></span>navigator.userAgent.indexOf('CriOS') == -1 &&<br>
+                                                <span class="pl-20"></span>navigator.userAgent.indexOf('FxiOS') == -1;<br>
+                                            </br>
+                                                            <span class="comment">// Check if should display install popup notification</span><br>
+                                                if (isIos() && !isInStandaloneMode() && detectMob()===true && isSafari===true) {<br>
+                                                    <span class="pl-20"></span>const addToHomeScreenIOS = document.querySelector('.a2hs');<br>
+                                                    <span class="pl-20"></span>addToHomeScreenIOS.style.display = "flex";<br>
+                                                    <span class="pl-20"></span>const downArr = document.querySelector('#triangle-down');<br>
+                                                    <span class="pl-20"></span>downArr.style.display="block";<br>
+                                                } else {<br>
+                                                    <span class="pl-20"></span>const addToHomeScreenIOS = document.querySelector('.a2hs');<br>
+                                                    <span class="pl-20"></span>addToHomeScreenIOS.style.display = "none";<br>
+                                                    <span class="pl-20"></span>const downArr = document.querySelector('#triangle-down');<br>
+                                                    <span class="pl-20"></span>downArr.style.display="none";<br>
+                                                }<br>
+                                                <br>
+                                                <span class="comment">// Close alert box when close icon clicked</span>    <br>
+                                                const closeAlert = () => {<br>
+                                                    <span class="pl-20"></span>addToHomeScreenIOS.style.display = "none";<br>
+                                                    <span class="pl-20"></span>downArr.style.display="none";<br>
+                                                }<br>
+                                               
+                                                const closeIcon = document.querySelector('.a2hs .close');<br>
+                                                closeIcon.addEventListener('click', closeAlert);     <br>         
 
                                             </div>
                                            
@@ -464,15 +440,146 @@
                                         </div>
                                             
                                     </div>
-                                    <div class="fragment pres-image fade-in-then-out" data-fragment-index="3">
-                                        <img width="188.71" height="408.53" class="pres-image" src="/img/safari-1.jpg">
-                                    </div>
+                                   
 
-                                    <i class="fragment fa-duotone fa-location-pin-lock fa-sl fade-in-then-out" data-fragment-index="4"></i>
+                                    <i class="fragment fa-duotone fa-location-pin-lock fa-sl fade-in-then-out" data-fragment-index="5"></i>
                                     
                                         
-                                    <div class="pres-image fragment fade-in-then-out" data-fragment-index="6">
-                                        <img src="/img/CCA_9.png" width="365.5" height="616.47">
+                                    <div class="fragment pres-image fade-in-then-out" data-fragment-index="6">
+                                        
+                                        <div class="code-block">
+                                            <div class="code-header"><p>countryRestriction.js</p></div>
+                                            <div class="code-pad">
+
+                                                <span class="comment">// Access denied message </span> <br>
+                                                function display_access_denied_error() {<br>
+                                                    <span class="pl-20"></span>document.body.innerHTML<br>
+                                                    <span class="pl-40"></span>= '&lt;div class="container denied">'<br>
+                                                    <span class="pl-40"></span>+ '&lt;div class="row">'<br>
+                                                    <span class="pl-40"></span>+ '&lt;div class="text-center h-100">'<br>
+                                                        <span class="pl-40"></span><br>
+                                                        <span class="pl-40"></span>+ '&lt;i class="fa-solid fa-lock-keyhole pb-5 mb-2">&lt;/i>'<br>
+                                                        <span class="pl-40"></span> + '&lt;h1>Access Denied&lt;/h1>'<br>
+                                                        <span class="pl-40"></span>+ '&lt;p>You do not have permission to access this resource.&lt;/p>'<br>
+                                                        <br>
+                                                        <span class="pl-40"></span>+ '&lt;/div>'<br>
+                                                        <span class="pl-40"></span>+ '&lt;/div>'<br>
+                                                        <span class="pl-40"></span> + '&lt;/div>'<br>
+                                                }       
+
+                                            </div>
+                                           
+                                            
+                                         
+
+                                        </div>
+                                            
+                                    </div>
+
+                                    <div class="fragment pres-image fade-in-then-out" data-fragment-index="7">
+                                        
+                                        <div class="code-block">
+                                            <div class="code-header"><p>countryRestriction.js</p></div>
+                                            <div class="code-pad">
+                                                <span class="comment">// Block countries</span><br>
+                                                function block_countries() {<br>
+                                                    <span class="pl-20"></span>const blocked_countries = [<br>
+                                                        <span class="pl-40"></span>"DE", <span class="comment">// Germany</span><br>
+                                                        <span class="pl-40"></span>"US", <span class="comment">// United States</span><br>
+                                                        <span class="pl-40"></span>"GB", <span class="comment">// United Kingdom</span><br>
+                                                        <span class="pl-40"></span>"UA", <span class="comment">// Ukraine</span><br>
+                                                        <span class="pl-40"></span>"AR", <span class="comment">// Argentina</span><br>
+                                                        <span class="pl-40"></span>"FI", <span class="comment">// Finland</span><br>
+                                                        <span class="pl-40"></span>"CA", <span class="comment">// Canada</span><br>
+                                                        <span class="pl-40"></span>"JP", <span class="comment">// Japan</span><br>
+                                                        <span class="pl-40"></span>"NO", <span class="comment">// Norway</span><br>
+                                                        <span class="pl-40"></span>"RU" <span class="comment">// Russia</span><br>
+                                                    <span class="pl-20"></span>]<br>
+                                                    <br>
+                                                    <span class="comment">// Detecting the users country</span><br>
+                                                    <span class="pl-20"></span>function get_country_code(api_url) {<br>
+                                                        <span class="pl-40"></span>fetch(api_url, { method: 'GET' })<br>
+                                                        <span class="pl-60"></span><span class="comment">// Getting ip info as json</span><br>
+                                                        <span class="pl-60"></span>.then(response => response.json())<br>
+                                                        <span class="pl-60"></span>.then(result => {<br>
+                                                            <span class="pl-80"></span><span class="comment">// If my ip country code is in blocked list</span><br>
+                                                            <span class="pl-80"></span>if (blocked_countries.includes(result.country)) { <br>
+                                                                <span class="pl-100"></span>display_access_denied_error() <span class="comment">// Access denied error</span><br>
+                                                                    <span class="pl-80"></span>}<br>
+                                                                    <span class="pl-60"></span>})<br>
+                                                                    <span class="pl-60"></span>.catch(error => console.log('error', error))<br>
+                                                    }<br>
+                                                    <br>
+                                                    <span class="pl-20"></span><span class="comment">// Getting country code from third party api</span><br>
+                                                    <span class="pl-20"></span>get_country_code("https://get.geojs.io/v1/ip/country.json")<br>
+                                                }<br>
+                                                <br>
+                                                block_countries() <span class="comment">// Block blocked countries</span><br>
+                                            </div>
+                                           
+                                            
+                                         
+
+                                        </div>
+                                            
+                                    </div>
+
+                                    <div class="fragment pres-image fade-in-then-out" data-fragment-index="8">
+                                        
+                                        <div class="code-block">
+                                            <div class="code-header"><p>countryRestriction.js</p></div>
+                                            <div class="code-pad">
+                                                <span class="comment">// Allow countries</span><br>
+                                                function allow_countries() {<br>
+                                                    <span class="pl-20"></span>const allowed_countries = [<br>
+                                                        
+                                                    <span class="pl-40"></span>"GB", <span class="comment">// United Kingdom</span><br>
+                                                       
+                                                        <span class="pl-20"></span>]<br>
+                                                    <br>
+                                                    <span class="pl-20"></span><span class="comment">// Detecting the users country</span><br>
+                                                    <span class="pl-20"></span>function get_country_code(api_url) {<br>
+                                                        <span class="pl-40"></span>fetch(api_url, { method: 'GET' })<br>
+                                                        <span class="pl-60"></span><span class="comment">// Getting ip info as json</span><br>
+                                                        <span class="pl-60"></span>.then(response => response.json()) <br>
+                                                        <span class="pl-60"></span>.then(result => {<br>
+                                                            <span class="pl-80"></span><span class="comment">// If my ip country code is not in allowed list</span><br>
+                                                            <span class="pl-80"></span>if (!allowed_countries.includes(result.country)) { <br>
+                                                                <span class="pl-100"></span>display_access_denied_error() <span class="comment">// Access denied error</span><br>
+                                                                <span class="pl-80"></span>}<br>
+                                                                <span class="pl-60"></span>})<br>
+                                                                <span class="pl-60"></span>.catch(error => console.log('error', error))<br>
+                                                                <span class="pl-20"></span>}<br>
+                                                    <br>
+                                                    <span class="pl-20"></span><span class="comment">// Getting country code from third party api</span><br>
+                                                    <span class="pl-20"></span>get_country_code("https://get.geojs.io/v1/ip/country.json")<br>
+                                                }<br>
+                                                <br>
+                                                allow_countries() <span class="comment">// Allow allowed countries</span> <br>
+                                            </div>
+                                            
+                                         
+
+                                        </div>
+                                            
+                                    </div>
+
+                                    <div class="fragment pres-image fade-in-then-out" data-fragment-index="9">
+                                        
+                                        <div class="code-block">
+                                            <div class="code-header"><p>https://get.geojs.io/v1/ip/country.json</p></div>
+                                            <div class="code-pad">
+                                                {"ip":"81.98.227.204","country_3":"GBR","name":"United Kingdom","country":"GB"}
+                                            </div>
+                                            
+                                         
+
+                                        </div>
+                                            
+                                    </div>
+
+                                    <div class="fragment pres-image fade-in-then-out" data-fragment-index="10">
+                                        <img width="100%" class="pres-image" src="/img/dp-desk.png">
                                     </div>
                                     
                                 </div>
